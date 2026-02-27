@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Event</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+        body {
+        background: #0f172a;
+        color: white;
+        line-height: 1.6;
+    }
+    header {
+        background: linear-gradient(90deg, #1e3a8a, #2563eb);
+        padding: 20px;
+        text-align: center;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+    }
+
+    header h1 {
+        font-size: 32px;
+        letter-spacing: 2px;
+    }
+    section {
+        padding: 60px 20px;
+        text-align: center;
+    }
+
+    .hero {
+        background: linear-gradient(135deg, #1e293b, #0f172a);
+        padding: 100px 20px;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+        margin-bottom: 20px;
+        color: #38bdf8;
+    }
+
+     .hero p {
+        font-size: 20px;
+        opacity: 0.8;
+    }
+
+    .schedule table {
+        margin: 30px auto;
+        border-collapse: collapse;
+        width: 80%;
+        background: #1e293b;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+
+    .schedule th, .schedule td {
+        padding: 15px;
+        border-bottom: 1px solid #334155;
+    }
+
+    .schedule th {
+        background: #2563eb;
+    }
+
+    .schedule tr:hover {
+        background: #334155;
+        transition: 0.3s;
+    }
+
+    iframe {
+        margin-top: 20px;
+        border-radius: 15px;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+    }
+
+    .contact {
+        background: #1e293b;
+        border-radius: 20px;
+        width: 80%;
+        margin: auto;
+        padding: 40px;
+    }
+    .contact p {
+        margin: 8px 0;
+    }
+
+    h2 {
+        font-size: 28px;
+        margin-bottom: 20px;
+        color: #60a5fa;
+    }
+    iframe {
+            width: 100%;
+            height: 250px;
+        }
+        .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 30px;
+    background-color: #1e293b;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: 600;
+    color: #38bdf8;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 18px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+}
+
+.nav-links a:hover {
+    color: #38bdf8;
+}
+
+/* Registration Section */
+.registration {
+    background: #1e293b;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.registration h2 {
+    font-size: 28px;
+    margin-bottom: 25px;
+    color: #38bdf8;
+}
+
+/* Button Styling */
+.registration button {
+    padding: 12px 30px;
+    background: #38bdf8;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.registration button a {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.registration button:hover {
+    background: #0ea5e9;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>TechAlohi 2026</h1>
+        <nav class="navbar">
+        <div class="logo">TechAlohi 2026</div>
+        <ul class="nav-links">
+            <li><a href="#event">Home</a></li>
+            <li><a href="#schedule">Schedule</a></li>
+            <li><a href="#video">Preview</a></li>
+            <li><a href="#map">Location</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    </header>
+<hr size="5"><br>
+    <section class="hero" id="event">
+        <h1>Welcome to TechAlohi 2026</h1>
+        <p>It's Time To Change With Innovation</p>
+    </section>
+<br><hr><br>
+    <section class="schedule" id="schedule">
+        <h2>Event Schedule</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Time</th>
+                    <th>Session</th>
+                    <th>Speaker</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>10.00 AM</td>
+                    <td>AI & ML</td>
+                    <td>Dr. Arun Sen</td>
+                </tr>
+                <tr>
+                    <td>12.00 PM</td>
+                    <td>Cyber Security</td>
+                    <td>Mrs. Arunima chatterjee</td>
+                </tr>
+                <tr>
+                    <td>2.00 PM</td>
+                    <td>Cloud Computing</td>
+                    <td>Mr. Debasis Mishra</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+<br><hr><br>
+
+    <section class="video" id="video">
+        <h2>Event Preview</h2>
+<iframe width="560" height="315"
+src="https://www.youtube.com/embed/92Wtm5nymoY"
+title="YouTube video player"
+frameborder="0"
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+allowfullscreen>
+</iframe>
+    </section>
+
+    <br><hr><br>
+
+    <section class="map" id="map">
+        <h2>Event Location</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3697.9739465990556!2d88.0722126!3d22.0505921!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a02f0bd0fcacc69%3A0x409c7ac845fe6280!2sHaldia%20Institute%20of%20Technology!5e0!3m2!1sen!2sin!4v1771426330319!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <br><hr><br>
+
+    <section class="registration" id="registration">
+        <h2>Registered yourself</h2>
+        <button><a href="register.html">Register</a></button>
+    </section>
+
+    <br><hr><br>
+
+    <section class="contact" id="contact">
+        <h2>Contact Us</h2>
+        <p><b>Rahul Sharma</b> - Event Coordinator</p>
+        <p>Phone: +91 9876543210</p>
+        <p>Email: rahul@technova.com</p>
+
+    <br>
+        <p><b>Ananya Roy</b> - Technical Head</p>
+        <p>Phone: +91 9123456780</p>
+        <p>Email: ananya@technova.com</p>
+
+    <br>
+
+        <p><b>Imran Khan</b> - Sponsorship Lead</p>
+        <p>Phone: +91 9988776655</p>
+        <p>Email: imran@technova.com</p>
+    </section>
+
+</body>
+</html>

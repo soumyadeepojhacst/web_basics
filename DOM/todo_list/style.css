@@ -1,0 +1,35 @@
+div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div #form{
+    padding: 50px;
+    #inputValues {
+    border-radius: 20px;
+    border: 2px solid rgb(132, 7, 115);
+    padding: 8px;
+}
+
+   #inputValues:focus {
+    outline: none;               
+    background-color: #f3d6f0;   
+}
+
+   button {
+    height: 35px;
+    width: 90px;
+    background-color: blueviolet;
+    border-radius: 10px;
+    border: none;              /* Remove default border */
+    color: white;              /* Text color */
+    cursor: pointer;           /* Hand cursor on hover */
+    transition: 0.3s ease;     /* Smooth effect */
+}
+
+button:hover {
+    background-color: rgb(86, 86, 255);
+    transform: scale(1.05);    /* Slight zoom effect */
+}
+} 
