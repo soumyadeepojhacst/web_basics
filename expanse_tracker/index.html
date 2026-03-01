@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>💰 Expense Tracker</h1>
+
+        <!-- Form -->
+        <form id="transactionForm" class="form-container">
+            <input type="text" id="description" placeholder="Description" required>
+            <input type="number" id="amount" placeholder="Amount" required>
+            <select id="category" required>
+                <option value="">Category</option>
+                <option value="Food">Food</option>
+                <option value="Travel">Travel</option>
+                <option value="Shopping">Shopping</option>
+                <option value="Bills">Bills</option>
+                <option value="Gaming">Gaming</option>
+                <option value="Other">Other</option>
+            </select>
+            <input type="date" id="date" required>
+            <div class="form-buttons">
+                <button type="submit">Save</button>
+                <button type="button" id="cancelEdit">Cancel</button>
+            </div>
+        </form>
+
+        <!-- Month/Year selector for Monthly Balance -->
+        <div class="monthly-filter">
+            <select id="monthSelect">
+                <option value="">Month</option>
+                <option value="0">January</option>
+                <option value="1">February</option>
+                <option value="2">March</option>
+                <option value="3">April</option>
+                <option value="4">May</option>
+                <option value="5">June</option>
+                <option value="6">July</option>
+                <option value="7">August</option>
+                <option value="8">September</option>
+                <option value="9">October</option>
+                <option value="10">November</option>
+                <option value="11">December</option>
+            </select>
+
+            <select id="yearSelect">
+                <option value="">Year</option>
+                <option value="2023">2023</option>
+                <option value="2024">2024</option>
+                <option value="2025">2025</option>
+                <option value="2026">2026</option>
+            </select>
+
+            <button id="showMonthlyBalance">Show Monthly Balance</button>
+        </div>
+
+        <!-- Balances -->
+        <div class="balances">
+            <p id="totalBalance">Total Balance: ₹0</p>
+            <p id="monthlyBalance">Monthly Balance: ₹0</p>
+        </div>
+
+        <!-- Transaction List -->
+        <ul id="transactionList"></ul>
+    </div>
+
+    <script type="module" src="./dist/app.js"></script>
+</body>
+</html>
