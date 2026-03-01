@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hostel Management System</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+
+    <h1>🏨 Hostel Management System</h1>
+
+    <input type="text" id="searchInput" placeholder="Search resident..." />
+    <p id="searchMessage" style="color:red;"></p>
+
+    <!-- Add / Edit Form -->
+    <h2 id="formTitle">Add Resident</h2>
+    <form id="residentForm">
+    <input type="hidden" id="residentId" />
+
+    <div class="form-row">
+        <input type="text" id="name" placeholder="Name" required />
+        <input type="number" id="age" placeholder="Age" required />
+        <input type="text" id="phone" placeholder="Phone" required />
+        <select id="roomNumber" required>
+            <option value="">Select Room</option>
+        </select>
+        <input type="date" id="checkInDate" required />
+    </div>
+
+    <div class="button-row">
+        <button type="submit">Save</button>
+        <button type="button" id="cancelEdit">Cancel</button>
+    </div>
+</form>
+
+    <hr>
+
+    <!-- Residents Table -->
+    <h2>Residents List</h2>
+    <table border="1" cellpadding="10">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Phone</th>
+                <th>Room</th>
+                <th>Check-in</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody id="residentTableBody"></tbody>
+    </table>
+
+    <script src="./dist/app.js" type="module"></script>
+</body>
+</html>

@@ -1,0 +1,194 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Roboto, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #eef2f7, #dbe7ff);
+    padding: 40px 20px;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 25px;
+    font-weight: 600;
+    color: #1f2d3d;
+}
+
+#searchInput {
+    width: 100%;
+    max-width: 420px;
+    padding: 12px 15px;
+    margin: 0 auto 10px auto;
+    display: block;
+    border-radius: 30px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    transition: 0.3s ease;
+    background: white;
+}
+
+#searchInput:focus {
+    outline: none;
+    border-color: #4a7cff;
+    box-shadow: 0 0 8px rgba(74, 124, 255, 0.3);
+}
+
+#searchMessage {
+    text-align: center;
+    margin-bottom: 25px;
+    font-weight: 500;
+}
+
+form {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    max-width: 1000px;
+    margin: 0 auto 40px auto;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.form-row {
+    display: flex;
+    gap: 15px;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.form-row input,
+.form-row select {
+    flex: 1;
+    padding: 10px 12px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+}
+
+.form-row input:focus,
+.form-row select:focus {
+    outline: none;
+    border-color: #4a7cff;
+    box-shadow: 0 0 6px rgba(74, 124, 255, 0.3);
+}
+
+.button-row {
+    text-align: center;
+}
+
+.button-row button {
+    padding: 10px 20px;
+    margin: 0 8px;
+    border-radius: 8px;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+button[type="submit"] {
+    background: #28c76f;
+    color: white;
+}
+
+button[type="submit"]:hover {
+    background: #20b463;
+    transform: scale(1.05);
+}
+
+#cancelEdit {
+    background: #ff4d4f;
+    color: white;
+}
+
+#cancelEdit:hover {
+    background: #e43e40;
+    transform: scale(1.05);
+}
+
+.editBtn {
+    background: #ff9f43;
+    color: white;
+    margin-right: 5px;
+}
+
+.editBtn:hover {
+    background: #ff851b;
+    transform: scale(1.05);
+}
+
+.deleteBtn {
+    background: #ff4d4f;
+    color: white;
+}
+
+.deleteBtn:hover {
+    background: #e43e40;
+    transform: scale(1.05);
+}
+
+table {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+thead {
+    background: linear-gradient(90deg, #4a7cff, #5f9cff);
+    color: white;
+}
+
+th {
+    padding: 14px;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+td {
+    padding: 12px;
+    font-size: 14px;
+    border-bottom: 1px solid #f1f1f1;
+}
+
+tbody tr {
+    transition: 0.2s ease;
+}
+
+tbody tr:hover {
+    background: #f6f9ff;
+    transform: scale(1.01);
+}
+
+.highlight {
+    background: linear-gradient(90deg, #fff176, #ffd54f);
+    color: #000;
+    font-weight: 600;
+    padding: 3px 6px;
+    border-radius: 6px;
+    animation: glow 0.4s ease-in-out;
+}
+
+@keyframes glow {
+    from {
+        background-color: #fff9c4;
+    }
+    to {
+        background-color: #ffd54f;
+    }
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 18px;
+    color: #2c3e50;
+    font-weight: 600;
+}

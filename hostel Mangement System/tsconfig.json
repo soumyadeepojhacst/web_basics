@@ -31,8 +31,7 @@
     // "noUnusedParameters": true,
     // "noFallthroughCasesInSwitch": true,
     // "noPropertyAccessFromIndexSignature": true,
-"noEmitOnError": true,
-"allowImportingTsExtensions":true;
+        "noEmitOnError": true,
     // Recommended Options
     "strict": true,
     // "jsx": "react-jsx",
